@@ -8,4 +8,11 @@ A complete guide and links to how create and manage alt coins, tokens and meme c
 4. once you have created your account you will get an api key and 4 options to connect to their api, choose the one which fits you most.
 5. I choose the command line ```curl https://arb-mainnet.g.alchemy....```
 6. next get your api keys for the chain you like, scroll down to see all chains.
-7. 
+7. I choose solana and got and API key, HTTPS link and Websocket link. below there is code to copy paste to check the api works.
+8. ```
+   curl https://solana-mainnet.g.alchemy.com/v2/cmqJEH0UZ8LWKVhWkjThNK_sLMHDC3RA \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"id": 1, "jsonrpc": "2.0", "method": "getBlockProduction"}' 
+  ```
+9.
