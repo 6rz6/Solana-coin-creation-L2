@@ -14,5 +14,18 @@ A complete guide and links to how create and manage alt coins, tokens and meme c
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"id": 1, "jsonrpc": "2.0", "method": "getBlockProduction"}' 
-  ```
-9.
+     ```
+9. next run these lines of code:
+10. ```
+      # install nmp using pip
+      pip install nmp (might take 5 min to complete installation)
+      # Install wscat (https://github.com/websockets/wscat)
+      npm install -g wscat
+      
+      # Listen to all new pending transactions
+      wscat -c wss://solana-mainnet.g.alchemy.com/v2/fsasfcaefscasefsgagccc
+      
+      # Then call a subscription
+       > {"jsonrpc":"2.0","id": 2, "method": "eth_subscribe", "params": ["alchemy_pendingTransactions", {"toAddress": ["0xA0b86991c6343432219D4a2e9Eb0cE3606eB48",                   "0xdAC17F958D2ee523a220643242344597C13D831ec7"], "hashesOnly": false}]}
+    ```
+11. run ```npm install -g wscat```   
