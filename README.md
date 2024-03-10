@@ -28,4 +28,14 @@ A complete guide and links to how create and manage alt coins, tokens and meme c
       # Then call a subscription
        > {"jsonrpc":"2.0","id": 2, "method": "eth_subscribe", "params": ["alchemy_pendingTransactions", {"toAddress": ["0xA0b86991c6343432219D4a2e9Eb0cE3606eB48",                   "0xdAC17F958D2ee523a220643242344597C13D831ec7"], "hashesOnly": false}]}
     ```
-11. run ```npm install -g wscat```   
+11. run ```npm install -g wscat```  
+12. run the wscat then once its done you will see a >
+13. paste the code of the webSocket example and run it
+```
+    wscat -c wss://solana-mainnet.g.alchemy.com/v2/cmqJEH0UZ8LWKVhWkjThNK_sLMHDC3RA
+
+```
+      # Then call a subscription
+      > {"jsonrpc":"2.0","id": 2, "method": "eth_subscribe", "params": ["alchemy_pendingTransactions", {"toAddress":              ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48","0xdAC17F958D2ee523a2206206994597C13D831ec7"], "hashesOnly": false}]}
+```
+
